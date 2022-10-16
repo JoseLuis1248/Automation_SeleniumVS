@@ -13,10 +13,10 @@ The steps to generate the HTML report:
 - Open a CMD command prompt
 - Enter the following code:
 (without test results)
-> livingdoc test-assembly <project name>.dll
+> livingdoc test-assembly (project name).dll
  - Enter the following code:
 (with test results)
-> livingdoc test-assembly <project name>.dll -t TestExecution.json
+> livingdoc test-assembly (project name).dll -t TestExecution.json
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
 ![Image](/Images/LivingCodeExample.png)
