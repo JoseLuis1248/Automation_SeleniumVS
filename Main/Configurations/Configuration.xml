@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <browser>Chrome</browser>
+  <implicitWait>5</implicitWait>
+  <explicitWait>15</explicitWait>
+  <crossBrowserExecution>Y</crossBrowserExecution>
+  <crossBrowsers>Chrome,Firefox,Edge</crossBrowsers>
+</Data>
