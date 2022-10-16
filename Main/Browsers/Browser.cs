@@ -19,26 +19,20 @@ namespace Main.Browsers
         public static double explicitWait = Convert.ToDouble(XMLreader.GetExplicitWait());
 
         public static void Initialize()
-        {
-            if(XMLreader.GetCrossBrowserExecution())
+        {            
+            switch (XMLreader.GetBrowser())
             {
-
+                case "Chrome":
+                    driver = new ChromeDriver();
+                    break;
+                case "Firefox":
+                    driver = new FirefoxDriver();
+                    break;
+                case "Edge":
+                    driver = new EdgeDriver();
+                    break;
             }
-            else
-            {
-                switch (XMLreader.GetBrowser())
-                {
-                    case "Chrome":
-                        driver = new ChromeDriver();
-                        break;
-                    case "Firefox":
-                        driver = new FirefoxDriver();
-                        break;
-                    case "Edge":
-                        driver = new EdgeDriver();
-                        break;
-                }
-            }
+            
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(implicitWait);
         }

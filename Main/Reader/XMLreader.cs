@@ -16,18 +16,6 @@ namespace Main.Reader
             return url;
         }
 
-        public static string[] GetCrossBrowsers()
-        {
-            string browsers = GetDataByPrjFolderXmlAndTag("Main", "Configurations", "Configuration", "crossBrowsers");
-            return browsers.Split(',');
-        }
-
-        public static Boolean GetCrossBrowserExecution()
-        {
-            string cr = GetDataByPrjFolderXmlAndTag("Main", "Configurations", "Configuration", "crossBrowserExecution");
-            return (cr == "Y") ? true : false;
-        }
-
         public static string GetExplicitWait()
         {
             string expWait = GetDataByPrjFolderXmlAndTag("Main", "Configurations", "Configuration", "explicitWait");

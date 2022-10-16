@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" />
   <Import Project="..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.props" Condition="Exists('..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.props')" />
   <Import Project="..\packages\NUnit.3.13.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.1\build\NUnit.props')" />
@@ -62,6 +63,12 @@
     </Reference>
     <Reference Include="Gherkin, Version=19.0.3.0, Culture=neutral, PublicKeyToken=86496cfa5b4a5851, processorArchitecture=MSIL">
       <HintPath>..\packages\Gherkin.19.0.3\lib\net45\Gherkin.dll</HintPath>
+    </Reference>
+    <Reference Include="LivingDoc.Dtos, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\lib\net461\LivingDoc.Dtos.dll</HintPath>
+    </Reference>
+    <Reference Include="LivingDoc.SpecFlowPlugin, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\lib\net461\LivingDoc.SpecFlowPlugin.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.13.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.13.1\lib\net45\nunit.framework.dll</HintPath>
@@ -137,10 +144,13 @@
     <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.GeckoDriver.0.32.0\build\Selenium.WebDriver.GeckoDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.GeckoDriver.0.32.0\build\Selenium.WebDriver.GeckoDriver.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.MSEdgeDriver.106.0.1370.34\build\Selenium.WebDriver.MSEdgeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.MSEdgeDriver.106.0.1370.34\build\Selenium.WebDriver.MSEdgeDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.props'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.targets'))" />
   </Target>
   <Import Project="..\packages\SpecFlow.3.9.74\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" />
   <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
   <Import Project="..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.targets" Condition="Exists('..\packages\SpecFlow.NUnit.3.9.74\build\SpecFlow.NUnit.targets')" />
   <Import Project="..\packages\Selenium.WebDriver.GeckoDriver.0.32.0\build\Selenium.WebDriver.GeckoDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.GeckoDriver.0.32.0\build\Selenium.WebDriver.GeckoDriver.targets')" />
   <Import Project="..\packages\Selenium.WebDriver.MSEdgeDriver.106.0.1370.34\build\Selenium.WebDriver.MSEdgeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.MSEdgeDriver.106.0.1370.34\build\Selenium.WebDriver.MSEdgeDriver.targets')" />
+  <Import Project="..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.targets" Condition="Exists('..\packages\SpecFlow.Plus.LivingDocPlugin.3.9.57\build\SpecFlow.Plus.LivingDocPlugin.targets')" />
 </Project>
