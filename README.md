@@ -1,3 +1,5 @@
+![Image](/Images/Automation.jpeg)
+
 # Automation_SeleniumVS
 
 The idea of this project is to share a basic Automation Project for everyone who wants to start creating automated test cases for Web applications using Selenium WebDriver and a flexible structure based on C# as a programming language and Visual Studio development tool.
@@ -51,10 +53,20 @@ https://joseluis1248.github.io/#/document/Standalone
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
 
-## Crossbrowser
-![Image](/Images/CrossBrowser.gif)
+## Crossbrowser Testing
 
+![Gif](/Images/CrossBrowser.gif)
 
+I recommend to use Selenium Grid or another formal tool for CrossBrowser Testing. But, if you want just to execute your test cases on differents types of browser. On the proyect you will find a cross browser test example, which has been designed to be executed on Chrome, Firefox and Edge browsers.
+
+## Examples
+
+The project has other test cases like examples of what you can do. The automated test cases writted has the goal to test some features of Google home page.
+
+## Getting Started with the project
+
+To start your automated test cases development:
+- 
 
 ## Credits
 
