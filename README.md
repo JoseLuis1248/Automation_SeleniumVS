@@ -25,7 +25,7 @@ With the last picture, i want you to understand which will be your system to use
 
 ![Image](/Images/Examples.png)
 
-There are some examples about flow that you will be using to automate new test cases on new projects.
+These are some examples about flow that you will be using to automate new test cases on new projects.
 - For example if you want to inicialize the browser, you will have to use the Browser class, which will use the XMLreader to now which driver has to instantiate and for that, it will use the configuration file, which one will have a line specifying the browser to execute.
 - Another example, if you have to click on some page element, you have to use the page class, which will have lot of elements, select the element you want and select the method you want to execute.
 - Finally, if you want to extract data of your XML file on your project, you have to use the XMLreader class and it will use the xml element on your project. 
