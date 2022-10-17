@@ -16,7 +16,7 @@ If you need more information about it, you can find it on Specflow official webs
 
 ![Image](/Images/Projects.png)
 
-With the last picture, i want you to understand what will be your system to automate this project:
+With the last picture, i want you to understand which will be your system to automate this project:
 - All the test projects will use "Main" project, because this one will contain all the POM structure: the page classes, the elements, the XML reader and others. So this project will not contain any test case, is just a project which its purpose is to have all the common functions in only one place. So if you have to modify something related with architecture, you will go there to modify it, and all the projects will use the functions updated.
 
 ## Living Doc
