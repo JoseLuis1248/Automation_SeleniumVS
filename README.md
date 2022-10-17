@@ -45,6 +45,8 @@ The steps to generate the HTML report:
 (with test results)
 > livingdoc test-assembly (project name).dll -t TestExecution.json
 - Share the HTML report created on the same folder
+This is an example of how the HTML report looks:
+https://joseluis1248.github.io/#/document/Standalone
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
 
