@@ -1,2 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<home>https://www.google.com.ar/</home>
+<Data>
+  <home>https://www.google.com.ar/</home>
+  <doodles>https://www.google.com/doodles</doodles>
+</Data>

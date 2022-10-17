@@ -1,7 +1,6 @@
 ﻿using Main.Browsers;
 using Main.Pages;
 using Main.Reader;
-using Main.Static;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -24,9 +23,32 @@ namespace TestHome.Steps
             Browser.GoToPage(url);
         }
 
+        [Given(@"Open ""(.*)"" page with browser ""(.*)""")]
+        public void GivenOpenPageWithBrowser(string pageName, string browser)
+        {
+            string url = XMLreader.GetUrlByModule(pageName.ToLower());
+            Browser.InitializeManually(browser);
+            Browser.GoToPage(url);
+        }
+
+
         #endregion
 
         #region WHEN SECTION
+
+        [When(@"User writes a ""(.*)"" on search input")]
+        public void WhenUserWritesAOnSearchInput(string textType)
+        {
+            string textToType = "";
+            switch(textType)
+            {
+                case "Simple Text":
+                    textToType = XMLreader.GetDataByTag("simpleText");
+                    break;
+            }
+            Home.SearchInput().SendText(textToType);
+        }
+
 
         [When(@"User clicks on ""(.*)""")]
         public void WhenUserClicksOn(string buttonName)
@@ -35,6 +57,20 @@ namespace TestHome.Steps
             {
                 case "Buscar con Google":
                     Home.SearchButton().Click();
+                    break;
+                case "Voy a tener suerte":
+                    Home.IWillHaveLuckButton().Click();
+                    break;
+            }
+        }
+
+        [When(@"User press ""(.*)"" key on search input")]
+        public void WhenUserPressKeyOnSearchInput(string key)
+        {
+            switch(key)
+            {
+                case "Enter":
+                    Home.SearchInput().PressEnter();
                     break;
             }
         }
@@ -47,10 +83,29 @@ namespace TestHome.Steps
         public void ThenPageShowsUrl(string pageName)
         {
             string actualUrl = Browser.driver.Url;
-            string expectedUrl = XMLreader.GetUrlByModule(pageName.ToLower());
+            string expectedUrl = "";
+            switch(pageName)
+            {
+                case "Home":
+                    expectedUrl = XMLreader.GetUrlByModule("home");
+                    break;
+                case "Doodles":
+                    expectedUrl = XMLreader.GetUrlByModule("doodles");
+                    break;
+            }
 
             Assert.AreEqual(expectedUrl, actualUrl);
         }
+
+        [Then(@"Page shows at least ""(.*)"" results")]
+        public void ThenPageShowsAtLeastResults(int result)
+        {
+            int actualResults = SearchResults.SearchResult().GetNumberOfElements();
+            int expectedResults = result;
+
+            Assert.Greater(actualResults, expectedResults);
+        }
+
 
         #endregion
     }

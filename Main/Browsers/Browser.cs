@@ -18,6 +18,25 @@ namespace Main.Browsers
         public static double implicitWait = Convert.ToDouble(XMLreader.GetImplicitWait());
         public static double explicitWait = Convert.ToDouble(XMLreader.GetExplicitWait());
 
+        public static void InitializeManually(string browser)
+        {
+            switch (browser)
+            {
+                case "Chrome":
+                    driver = new ChromeDriver();
+                    break;
+                case "Firefox":
+                    driver = new FirefoxDriver();
+                    break;
+                case "Edge":
+                    driver = new EdgeDriver();
+                    break;
+            }
+
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(implicitWait);
+        }
+
         public static void Initialize()
         {            
             switch (XMLreader.GetBrowser())
@@ -53,9 +72,20 @@ namespace Main.Browsers
             return driver.FindElement(By.XPath(path));
         }
 
+        public static IWebElement[] FindElements(string path)
+        {
+            if (explicitWait > 0)
+            {
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(explicitWait));
+                return wait.Until(drv => drv.FindElements(By.XPath(path)).ToArray());
+
+            }
+            return driver.FindElements(By.XPath(path)).ToArray();
+        }
+
         public static void CloseBrowser()
         {
-            driver.Close();
+            driver.Quit();
         }
     }
 }

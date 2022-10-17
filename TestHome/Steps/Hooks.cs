@@ -1,5 +1,4 @@
 ﻿using Main.Browsers;
-using Main.Static;
 using System;
 using System.Collections.Generic;
 using System.Linq;

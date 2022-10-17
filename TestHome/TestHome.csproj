@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\CrossBrowserExample.feature" />
     <None Include="Features\Feature.feature" />
     <None Include="packages.config" />
   </ItemGroup>
