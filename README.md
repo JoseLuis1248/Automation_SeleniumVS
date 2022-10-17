@@ -51,6 +51,11 @@ https://joseluis1248.github.io/#/document/Standalone
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
 
+## Crossbrowser
+![Image](/Images/CrossBrowser.gif)
+
+
+
 ## Credits
 
 This project has been done using POM structure for automated test cases development, Specflow features and some common practices for projects.
