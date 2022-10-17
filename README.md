@@ -33,6 +33,7 @@ There are some examples about flow that you will be using to automate new test c
 ## Explanation Videos
 
 Most of this project has been done thanks of the experience, but there are a lot of information about POM (page object model) structure on internet and if you want to learn more about Specflow, there are some really good explanation videos about how to start a project using features files and step definition files and how to continue automating new test cases with that structure on Specflow official channel on youtube. The section is "Getting Started with SpecFlow" from Bas Dijkstra:
+
 https://www.youtube.com/watch?v=HpRzI0C-x-8&list=PL5lX-Y5KVGPrH8g6ONpgpPSe8Z1Sh4vDg&index=1
 
 
@@ -40,7 +41,7 @@ https://www.youtube.com/watch?v=HpRzI0C-x-8&list=PL5lX-Y5KVGPrH8g6ONpgpPSe8Z1Sh4
 
 ![Image](/Images/LivingCodeExample.png)
 
-This is a feature from Specflow useful to generate reports for each stakeholder of the project. A really easy and elegant way to report test cases with or without test results.
+This is a feature useful to generate reports for each stakeholder of the project. A really easy and elegant way to report test cases with or without test results.
 The steps to generate the HTML report:
 - Go to "Debug" folder of your project
 - Open a CMD command prompt
@@ -50,7 +51,6 @@ The steps to generate the HTML report:
  - Enter the following code:
 (with test results)
 > livingdoc test-assembly (project name).dll -t TestExecution.json
+- Share the HTML report created on the same folder
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
-
- 
