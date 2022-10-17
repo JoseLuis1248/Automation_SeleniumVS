@@ -32,7 +32,8 @@ There are some examples about flow that you will be using to automate new test c
 
 ## Explanation Videos
 
-Most of this project has been done thanks of the experience, but there are a lot of information about POM (page object model) structure on internet and if you want to learn more about Specflow, there are some really good explanation videos about how to start a project using features files and step definition files and how to continue automating new test cases with that structure on Specflow official channel on youtube. The section is "Getting Started with SpecFlow" from Bas Dijkstra:
+This project has been done thanks of the courses, experience and internet tutorials. This project use: POM, Specflow and some common practices for projects.
+There are a lot of information about POM (page object model) structure on internet and if you want to learn more about Specflow, there are some really good explanation videos about features files and step definition files on Specflow official channel on youtube. The section is "Getting Started with SpecFlow" from Bas Dijkstra:
 
 https://www.youtube.com/watch?v=HpRzI0C-x-8&list=PL5lX-Y5KVGPrH8g6ONpgpPSe8Z1Sh4vDg&index=1
 
