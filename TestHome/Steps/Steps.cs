@@ -47,7 +47,7 @@ namespace TestHome.Steps
         public void ThenPageShowsUrl(string pageName)
         {
             string actualUrl = Browser.driver.Url;
-            string expectedUrl = XMLreader.GetUrlByModule(pageName.ToLower()); ;
+            string expectedUrl = XMLreader.GetUrlByModule(pageName.ToLower());
 
             Assert.AreEqual(expectedUrl, actualUrl);
         }
