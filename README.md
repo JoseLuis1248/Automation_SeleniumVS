@@ -1,4 +1,4 @@
-![Image](/Images/Automation.jpeg)
+![Image](/Resources/Automation.jpeg)
 
 # Automation_SeleniumVS
 
@@ -6,7 +6,7 @@ The idea of this project is to share a basic Automation Project for everyone who
 This project has been made using Specflow and the architecture is based on Page Object Model.
 
 ## Architecture
-![Image](/Images/Architecture.png)
+![Image](/Resources/Architecture.png)
 
 Meaning:
 - The features files will contain the description of all the test cases that will be automated. The point here is that you will be able to write them on Gherkin language, that will help everyone of the stakeholders to understand what is being automated; because Gherkin language is similar to the common language humans talk.
@@ -18,14 +18,14 @@ If you need more information about it, you can find it on Specflow official webs
 
 ## Management of projects
 
-![Image](/Images/Projects.png)
+![Image](/Resources/Projects.png)
 
 With the last picture, i want you to understand which will be your system to use this project to automate:
 - All the future test projects will use "Main" project, because this one will contain all the POM structure: the page classes, the elements, the XML reader and others. So this project will not contain any test case, is just a project which its purpose is to have all the common functions in only one place. So if you have to modify something related with architecture, you will go there to modify it, and all the projects will use the functions updated.
 
 ## Elements coordination flow
 
-![Image](/Images/Examples.png)
+![Image](/Resources/Examples.png)
 
 These are some examples about flow that you will be using to automate new test cases on new projects.
 - For example if you want to inicialize the browser, you will have to use the Browser class, which will use the XMLreader to now which driver has to instantiate and for that, it will use the configuration file, which one will have a line specifying the browser to execute.
@@ -34,7 +34,7 @@ These are some examples about flow that you will be using to automate new test c
 
 ## Living Doc
 
-![Image](/Images/LivingCodeExample.png)
+![Image](/Resources/LivingCodeExample.png)
 
 This is a feature useful to generate reports for stakeholders. A really easy and elegant way to report test cases with or without test results.
 The steps to generate the HTML report:
@@ -55,7 +55,7 @@ Anyway, if you have question about more detailed features of Living Documentacio
 
 ## Crossbrowser Testing
 
-![Gif](/Images/CrossBrowser.gif)
+![Gif](/Resources/CrossBrowser.gif)
 
 I recommend to use Selenium Grid or another formal tool for CrossBrowser Testing. But, if you want just to execute your test cases on differents types of browser. On the proyect you will find a cross browser test example, which has been designed to be executed on Chrome, Firefox and Edge browsers.
 
