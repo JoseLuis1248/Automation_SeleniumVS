@@ -30,19 +30,11 @@ There are some examples about flow that you will be using to automate new test c
 - Another example, if you have to click on some page element, you have to use the page class, which will have lot of elements, select the element you want and select the method you want to execute.
 - Finally, if you want to extract data of your XML file on your project, you have to use the XMLreader class and it will use the xml element on your project. 
 
-## Explanation Videos
-
-This project has been done thanks of the courses, experience and internet tutorials. This project use: POM, Specflow and some common practices for projects.
-There are a lot of information about POM (page object model) structure on internet and if you want to learn more about Specflow, there are some really good explanation videos about features files and step definition files on Specflow official channel on youtube. The section is "Getting Started with SpecFlow" from Bas Dijkstra:
-
-https://www.youtube.com/watch?v=HpRzI0C-x-8&list=PL5lX-Y5KVGPrH8g6ONpgpPSe8Z1Sh4vDg&index=1
-
-
 ## Living Doc
 
 ![Image](/Images/LivingCodeExample.png)
 
-This is a feature useful to generate reports for each stakeholder of the project. A really easy and elegant way to report test cases with or without test results.
+This is a feature useful to generate reports for stakeholders. A really easy and elegant way to report test cases with or without test results.
 The steps to generate the HTML report:
 - Go to "Debug" folder of your project
 - Open a CMD command prompt
@@ -55,3 +47,10 @@ The steps to generate the HTML report:
 - Share the HTML report created on the same folder
 
 Anyway, if you have question about more detailed features of Living Documentacion, you will be able to find it on Specflow official website.
+
+## Credits
+
+This project has been done thanks of the courses, experience and internet tutorials. This project use: POM, Specflow and some common practices for projects.
+There are a lot of information about POM (page object model) structure on internet and if you want to learn more about Specflow, there are some really good explanation videos about features files and step definition files on Specflow official channel on youtube. The section is "Getting Started with SpecFlow" from Bas Dijkstra:
+
+https://www.youtube.com/watch?v=HpRzI0C-x-8&list=PL5lX-Y5KVGPrH8g6ONpgpPSe8Z1Sh4vDg&index=1
