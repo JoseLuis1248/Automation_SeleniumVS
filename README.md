@@ -1,6 +1,6 @@
 ![Image](/Resources/ProjectLogo.png)
 
-# Automation_SeleniumVS
+# Free Automation Test Project
 
 This is a free Automation Test Project that will allow you to start you career as an QA Automation Tester, since the most simple website until the most modern web application.
 
