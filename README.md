@@ -4,7 +4,7 @@
 
 This is a free Automation Test Project that will allow you to start you career as an QA Automation Tester, since the most simple website until the most modern web application.
 
-With this project you will be able to use a flexible architecture based on Page Object Model and Specflow, which allow you to write understandable automated test cases for each stakeholder of your company. Finally, thanks to Selenium Web driver, you can start easily creating automated test cases oriented to Acceptance Testing, Function Testing, Regressions and more..
+With this project you will be able to use a flexible architecture based on Page Object Model and Specflow, which allow you to write understandable automated test cases for each stakeholder of your company. Finally, thanks to Selenium Web driver, you can start easily creating automated test cases oriented to Acceptance Testing, Function Testing, Regressions and more for lot of types of browsers such as Chrome, Firefox and Edge..
 
 ## Features
 
