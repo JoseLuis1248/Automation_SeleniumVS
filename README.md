@@ -1,4 +1,4 @@
-![Image](/Resources/Automation.jpeg)
+![Image](/Resources/ProjectLogo.png)
 
 # Automation_SeleniumVS
 
