@@ -19,7 +19,7 @@ With this project you will be able to use a flexible architecture based on Page 
 ## Getting Started with the project
 
 To start your automated test cases development:
-- Download or Fork the project
+- Download or clone the project
 - Open the project on Visual Studio
 - Download the extension "Specflow for Visual Studio"
 - Compile the solution
