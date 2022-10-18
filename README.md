@@ -78,7 +78,7 @@ Anyway, if you have question about more detailed features of Living Documentacio
 
 ![Gif](/Resources/CrossBrowser.gif)
 
-I recommend to use Selenium Grid or another formal tool for CrossBrowser Testing. But, if you want just to execute your test cases on differents types of browser. On the proyect you will find a cross browser test example, which has been designed to be executed on Chrome, Firefox and Edge browsers.
+I recommend to use Selenium Grid or another formal tool for CrossBrowser Testing. But, if you just want to execute your test cases on differents types of browser: on the proyect you will find a cross browser test example, which has been designed to be executed on Chrome, Firefox and Edge browsers.
 
 ## Credits
 
