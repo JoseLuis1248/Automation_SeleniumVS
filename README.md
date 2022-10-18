@@ -2,13 +2,33 @@
 
 # Automation_SeleniumVS
 
-The idea of this project is to share a basic Automation Project for everyone who wants to start creating automated test cases for Web applications using Selenium WebDriver and a flexible structure based on C# as a programming language and Visual Studio development tool.
-This project has been made using Specflow and the architecture is based on Page Object Model.
+This is a free Automation Test Project that will allow you to start you carreer as an QA Automation Tester, since the moost simple website until the most modern web application.
+With this project you will be able to use a flexible architecture based on Page Object Model and Specflow, which allow you to write understandable automated test cases for each stakeholder of your company. Finally, thanks to Selenium Web driver, you can start easily creating automated test cases oriented to Acceptance Testing, Function Testing, Regressions and more..
+
+## Features
+
+- POM (Page object model): Structure for automation testing, where each page of your web application will have a class into the project.
+- Selenium Web Driver: Powerfull tool that will allow you to handle multiple events on differents browsers.
+- Specflow: BDD Framework for .NET development, useful to create test scenarios and improve the collaborations between parts.
+- Gherkin: Powerfull language to write understandable test cases for all of your company.
+- C#: One of the most useful programming languages
+- Livind Doc: Easily and elegant reports to share with stakeholders of your company. Sharing your test cases and results has never been so easy.
+- Nunit: Framework open source for .NET
+
+## Getting Started with the project
+
+To start your automated test cases development:
+- Download or Fork the project
+- Open the project on Visual Studio
+- Download the extension "Specflow for Visual Studio"
+- Compile the solution
+
+You are ready to start executing the test cases already done as examples, or just modify the code to adapt it to your projects or your company.
+The test cases automated have been done to test some features of Google home page.
 
 ## Architecture
 ![Image](/Resources/Architecture.png)
 
-Meaning:
 - The features files will contain the description of all the test cases that will be automated. The point here is that you will be able to write them on Gherkin language, that will help everyone of the stakeholders to understand what is being automated; because Gherkin language is similar to the common language humans talk.
 So, the point here is just to write the test cases in steps, on the most understandable way as possible, trying to make every step of the test cases as simple as you can.
 If you need more information about it, you can find it on Specflow official website, on this link: https://specflow.org/learn/gherkin/
@@ -58,15 +78,6 @@ Anyway, if you have question about more detailed features of Living Documentacio
 ![Gif](/Resources/CrossBrowser.gif)
 
 I recommend to use Selenium Grid or another formal tool for CrossBrowser Testing. But, if you want just to execute your test cases on differents types of browser. On the proyect you will find a cross browser test example, which has been designed to be executed on Chrome, Firefox and Edge browsers.
-
-## Examples
-
-The project has other test cases like examples of what you can do. The automated test cases writted has the goal to test some features of Google home page.
-
-## Getting Started with the project
-
-To start your automated test cases development:
-- 
 
 ## Credits
 
