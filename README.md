@@ -18,10 +18,19 @@ With this project you will be able to use a flexible architecture based on Page 
 
 ## Getting Started with the project
 
-To start your automated test cases development:
+On Visual Studio, to start your automated test cases development:
 - Download or clone the project
 - Open the project on Visual Studio
-- Download the extension "Specflow for Visual Studio"
+- Download the extension "Specflow for Visual Studio" on Extensions -> Manage Extensions
+- Make sure you have the following features downloaded on Tools -> Get Tools and Features:
+  . ASP.NET and web development
+  . Azure development
+  . Net desktop development
+  . Universal Windows Platform development
+  . Visual Studio extension development
+- In order to use "LivingDoc" you should install the tool executing the following line on a command prompt:
+  . dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+- Make sure you have the lastest versions of webdrivers to execute the test cases, do it on Solution -> Right click -> Manage NuGet Packages for Solution
 - Compile the solution
 
 You are ready to start executing the test cases already done as examples, or just modify the code to adapt it to your projects or your company.
